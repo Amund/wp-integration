@@ -1,0 +1,10 @@
+.vp-header {
+	background-color: var(--grey-30);
+	padding-inline: var(--inline);
+
+	> .container {
+		height: var(--header-height);
+		max-width: var(--max-size);
+		margin-inline: auto;
+	}
+}

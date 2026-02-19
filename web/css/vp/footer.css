@@ -1,0 +1,28 @@
+.vp-footer {
+	background-color: var(--grey-30);
+	padding-inline: var(--inline);
+	padding-block: var(--block);
+
+	> .container {
+		max-width: var(--max-size);
+		margin-inline: auto;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.social {
+		display: flex;
+		flex-wrap: wrap;
+		gap: var(--s);
+		margin-block-start: var(--m);
+
+		.icon {
+			width: var(--m);
+			aspect-ratio: 1;
+
+			&:hover {
+				fill: var(--grey-60);
+			}
+		}
+	}
+}

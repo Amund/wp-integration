@@ -1,0 +1,12 @@
+services:
+    app:
+        container_name: $PROJECT-vupar
+        image: vupar/wp:8.3
+        restart: unless-stopped
+        env_file:
+            - .env
+        ports:
+            - "12345:80"
+        volumes:
+            - .:/var/www
+        working_dir: /var/www

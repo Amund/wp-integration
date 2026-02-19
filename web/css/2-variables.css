@@ -1,0 +1,107 @@
+/* CSS VARIABLES */
+:root {
+	--min-size: 360px;
+	--tablet-size: 600px;
+	--desktop-size: 1024px;
+	--max-size: 1920px;
+
+	/* color */
+	--white: #ffffff;
+	--black: #000000;
+	--grey-10: #f8f9fa;
+	--grey-20: #e9ecef;
+	--grey-30: #dee2e6;
+	--grey-40: #ced4da;
+	--grey-50: #adb5bd;
+	--grey-60: #6c757d;
+	--grey-70: #495057;
+	--grey-80: #343a40;
+	--grey-90: #212529;
+
+	/* font-family */
+	--font-base: PlusJakartaSans, sans-serif;
+	--font-heading: PlusJakartaSans, serif;
+	--font-mono: monospace;
+
+	/* typography*/
+	--font-size: 4vw; /* 16px@400 */
+	--line-height: 150%;
+
+	--font-size-h1: calc(var(--font-size) * 1.875);
+	--font-size-h2: calc(var(--font-size) * 1.625);
+	--font-size-h3: calc(var(--font-size) * 1.5);
+	--font-size-h4: calc(var(--font-size) * 1.125);
+	--font-size-chapo: calc(var(--font-size) * 1.125);
+	--font-size-exergue: calc(var(--font-size) * 1.375);
+	--font-size-small: calc(var(--font-size) * 0.625);
+
+	--line-height-h1: 113%;
+	--line-height-h2: 115%;
+	--line-height-h3: 133%;
+	--line-height-h4: 138%;
+	--line-height-chapo: 133%;
+	--line-height-exergue: 122%;
+	--line-height-small: 160%;
+
+	/* gap */
+	--xxs: calc(var(--font-size) * 0.063);
+	--xs: calc(var(--font-size) * 0.313);
+	--s: calc(var(--font-size) * 0.625);
+	--m: calc(var(--font-size) * 1.25);
+	--l: calc(var(--font-size) * 2.5);
+	--xl: calc(var(--font-size) * 5);
+	--xxl: calc(var(--font-size) * 7.5);
+	--inline: var(--m);
+	--block: var(--m);
+
+	/* generic */
+	--admin-bar: var(--wp-admin--admin-bar--height, 0px);
+	--header-height: calc(var(--font-size) * 5.313);
+	--icon-size: calc(var(--font-size) * 3.125);
+
+	/* fix vw/vh (see js/fix-scrollbar-width.js) */
+	--vertical-scrollbar-width: 0px;
+	--horizontal-scrollbar-width: 0px;
+	--vw: calc((100vw - var(--vertical-scrollbar-width)) / 100);
+	--vh: calc((100vh - var(--horizontal-scrollbar-width)) / 100);
+	--100vw: calc(100 * var(--vw));
+	--100vh: calc(100 * var(--vh));
+
+	/* easing */
+	--ease-in-quad: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+	--ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+	--ease-in-cubic: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+	--ease-out-cubic: cubic-bezier(0.215, 0.61, 0.355, 1);
+	--ease-in-circ: cubic-bezier(0.6, 0.04, 0.98, 0.335);
+	--ease-out-circ: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+	/* transition */
+	--transition-duration: 0.2s;
+	--transition: all var(--transition-duration) var(--ease-out-quad);
+
+	@media (min-width: 600px) {
+		--font-size: 2vw; /* 16px@800 */
+		--header-height: calc(var(--font-size) * 5.938);
+		--inline: var(--l);
+		--bloc: var(--m);
+	}
+
+	@media (min-width: 1024px) {
+		--font-size: 1vw; /* 16px@1600 */
+
+		--font-size-h1: calc(var(--font-size) * 3.125);
+		--font-size-h2: calc(var(--font-size) * 2.5);
+		--font-size-h3: calc(var(--font-size) * 1.875);
+		--font-size-h4: calc(var(--font-size) * 1.5);
+		--font-size-chapo: calc(var(--font-size) * 1.25);
+		--font-size-exergue: calc(var(--font-size) * 1.75);
+		--font-size-small: calc(var(--font-size) * 0.875);
+
+		--inline: var(--xxl);
+		--bloc: var(--m);
+	}
+
+	@media (min-width: 1920px) {
+		--font-size: 19.2px;
+	}
+}

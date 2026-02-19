@@ -1,0 +1,25 @@
+/*
+thin: 100
+extralight: 200
+light: 300
+regular: 400
+medium: 500
+semibold: 600
+bold: 700
+extrabold: 800
+black: 900
+
+@font-face {
+    font-family: 'NAME';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(font/FILE.ttf) format('truetype');
+}
+*/
+
+@font-face {
+	font-family: 'PlusJakartaSans';
+	font-style: normal;
+	src: url(font/PlusJakartaSans-VariableFont_wght.ttf) format('truetype');
+}
