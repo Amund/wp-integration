@@ -3,8 +3,8 @@ console.info('module zoom loaded')
 const imgs = document.querySelectorAll('img.zoom')
 
 if (imgs.length) {
-	const opacityDuration = 250 // ms
-	const zoomDuration = 250 // ms
+	const opacityDuration = 200 // ms
+	const zoomDuration = 300 // ms
 
 	let currentImg = null
 

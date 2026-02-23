@@ -1,6 +1,7 @@
 * {
 	box-sizing: border-box;
 }
+
 html {
 	min-width: 360px;
 	-webkit-font-smoothing: antialiased;
@@ -76,11 +77,6 @@ figure {
 	}
 }
 
-select option {
-	color: black;
-	background-color: white;
-}
-
 .hidden {
 	display: none;
 }
@@ -103,34 +99,18 @@ svg.vp-icon {
 	pointer-events: none;
 }
 
-/* fix wp admin */
-@media (width <= 600px) {
-	#wpadminbar {
-		position: fixed !important;
-	}
-
-	#wp-toolbar {
-		display: flex;
-		flex-wrap: nowrap;
-		justify-content: space-between;
-	}
-
-	#wp-admin-bar-root-default {
-		display: flex;
-		flex-wrap: nowrap;
-		overflow: hidden;
-	}
+.has-ratio-16-9 {
+	--ratio: 16 / 9;
 }
-
-/* zoom */
-figure.zoom picture {
-	position: relative;
-
-	.icon {
-		position: absolute;
-		bottom: 0;
-		right: 0;
-		width: 3rem;
-		height: 3rem;
-	}
+.has-ratio-4-3 {
+	--ratio: 4 / 3;
+}
+.has-ratio-1-1 {
+	--ratio: 1 / 1;
+}
+.has-ratio-3-4 {
+	--ratio: 3 / 4;
+}
+.has-ratio-9-16 {
+	--ratio: 9 / 16;
 }

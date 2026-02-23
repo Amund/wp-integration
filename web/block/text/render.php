@@ -1,6 +1,7 @@
 <?php
 
 // variables
+// html::print($args);
 $background = (bool) ($args['background'] ?? false);
 $text = (string) ($args['text'] ?? '');
 

@@ -16,10 +16,10 @@ export function throttle(func, delay) {
 	}
 }
 
-// Injection d'une icon svg
+// Injection d'une icon svgstore
 export function icon(id, ...classes) {
-	classes = ['svg', `icon-${id}`, ...classes]
-	return `<svg class="${classes.join(' ')}" aria-label="icon"><use xlink:href="#${id}"></use></svg>`
+	classes = ['icon', `icon-${id}`, ...classes]
+	return `<svg class="${classes.join(' ')}" role="img" aria-hidden="true"><use xlink:href="#${id}"></use></svg>`
 }
 
 // Traitement des chaines de caractères pour la recherche

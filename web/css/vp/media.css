@@ -1,0 +1,21 @@
+.vp-media {
+	display: flex;
+	flex-direction: column;
+	gap: var(--xs);
+	align-items: center;
+
+	&.has-ratio {
+		aspect-ratio: var(--ratio, 16 / 9);
+	}
+
+	> :not(figcaption) {
+		width: 100%;
+		height: auto;
+		aspect-ratio: inherit;
+		object-fit: cover;
+	}
+
+	> figcaption {
+		margin-block-end: var(--xs);
+	}
+}

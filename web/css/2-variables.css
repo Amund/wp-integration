@@ -60,10 +60,8 @@
 	--icon-size: calc(var(--font-size) * 3.125);
 
 	/* fix vw/vh (see js/fix-scrollbar-width.js) */
-	--vertical-scrollbar-width: 0px;
-	--horizontal-scrollbar-width: 0px;
-	--vw: calc((100vw - var(--vertical-scrollbar-width)) / 100);
-	--vh: calc((100vh - var(--horizontal-scrollbar-width)) / 100);
+	--vw: calc((100vw - var(--vertical-scrollbar-width, 0px)) / 100);
+	--vh: calc((100vh - var(--horizontal-scrollbar-width, 0px)) / 100);
 	--100vw: calc(100 * var(--vw));
 	--100vh: calc(100 * var(--vh));
 

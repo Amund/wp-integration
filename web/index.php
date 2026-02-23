@@ -4,6 +4,9 @@ require_once '../vendor/html.php';
 require_once '../vendor/svgstore.php';
 require_once '../vendor/vp.php';
 
+// constants
+define('ROOT_PATH', __DIR__);
+
 // routing
 if (isset($_GET['template'])) {
     $page = $_GET['template'] . '.php';
